@@ -79,7 +79,7 @@ public class JDBCExample {
             }
             if (connection != null) {
                 connection.close();
-                System.out.println("Соединение с базой данных \"db_music\" завершено");
+                System.out.println("Соединение с базой данных \"music\" завершено");
             }
         }
     }
@@ -125,7 +125,7 @@ public class JDBCExample {
         connectDatabase(database);      // соединение с базой данных db_music
 
         String query = null;
-        query = readFile("/home/day0ff/IdeaProjects/music.sql");
+        query = readFile("/home/day0ff/IdeaProjectsCources/Music/sql/create.sql");
         query(query,"CREATE TABLES");
         query = readFile("/home/day0ff/IdeaProjectsCources/Music/sql/insert.sql");
         query(query,"INSERT TABLES");
